@@ -25,16 +25,22 @@
   </head>
   <body>
     <main>
-      <img
-        src="images/image-product-mobile.jpg"
-        alt="PERFUME-image"
-        class="mobile-image"
-      />
-      <img
+      <picture>
+        <source
+          media="(min-width: 56rem)"
+          srcset="images/image-product-desktop.jpg"
+        />
+        <img
+          src="images/image-product-mobile.jpg"
+          alt="PERFUME"
+          class="mobile-image"
+        />
+      </picture>
+      <!-- <img
         src="images/image-product-desktop.jpg"
-        alt="PERFUME-image"
+        alt="PERFUME"
         class="desktop-image"
-      />
+      /> -->
       <div id="info-container" class="perf-info">
         <h2 class="perf-info">PERFUME</h2>
         <h1 class="perf-info">Gabrielle Essence Eau De Parfume</h1>
